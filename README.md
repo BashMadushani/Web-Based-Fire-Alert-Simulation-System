@@ -1,5 +1,4 @@
 🔥 Web-Based Fire Alert Simulation System
-
 (AI & IoT-Based Smart Fire Detection System)
 
 📌 Project Overview
@@ -30,6 +29,7 @@ Smart factory / smart building simulations
 🧠 Scalable for IoT sensor & AI model integration
 
 🧭 System Architecture
+
 +----------------+        HTTP        +----------------+
 |  Streamlit UI  |  <------------->  |   FastAPI API  |
 |  (Frontend)    |                   |  (Backend)     |
@@ -42,13 +42,24 @@ Smart factory / smart building simulations
    (Dashboard Alerts)                 (Severity Decision)
 
 📂 Project Structure
-Fire interface/
+ Fire interface/
 │
-├─ app.py          # Streamlit frontend (UI + CSS)
-├─ backend.py      # FastAPI backend (fire logic & API)
-├─ requirements.txt
-├─ README.md
-└─ .gitignore
+├─ app.py
+│   ├─ Streamlit UI Layout
+│   ├─ Custom CSS Styling
+│   ├─ Fire Status Display
+│   └─ User Interaction Logic
+│
+├─ backend.py
+│   ├─ FastAPI Server
+│   ├─ Fire Detection Logic
+│   ├─ Severity Classification
+│   └─ Alert Response Handling
+│
+└─ Communication Flow
+    └─ app.py  →  backend.py (HTTP API calls)
+
+
 
 🧩 Module Description
 🔹 Frontend (Streamlit – app.py)
@@ -73,20 +84,17 @@ Fire risk calculation
 
 Extendable for IoT sensors / AI models
 
-🛠️ Tools & Technologies
-Category	Technology
-Frontend	Streamlit
-Backend	FastAPI
-Language	Python
-UI Styling	CSS (embedded)
-API	REST
-Version Control	Git & GitHub
-⚙️ Development Environment
+🛠️ Tools & Technologies.
 
-Python 3.9+
+| Category        | Technology     |
+| --------------- | -------------- |
+| Frontend        | Streamlit      |
+| Backend         | FastAPI        |
+| Language        | Python         |
+| UI Styling      | CSS (embedded) |
+| API             | REST           |
+| Version Control | Git & GitHub   |
 
-Windows / Linux / macOS
 
-VS Code (recommended)
 
-Git installed
+
